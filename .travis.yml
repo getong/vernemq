@@ -20,6 +20,8 @@ install: true
 otp_release:
     - 18.3
     - 19.3
-    - 20.0
+    - 20.3
+    - 21.0.2
+
 before_script: "epmd -daemon"
 script: "./rebar3 as all_tests do eunit, ct"
